@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+   background-color: #B6C99B;
+}
+
+h1 {
+  /*  text-align: center;
+    color: #333;*/ 
+
+    background-color: #E7F5DC; /* Black with 50% transparency */
+    color: rgb(227, 106, 106);
+    padding: 20px 0; /* Adjust padding for better appearance */
+    text-align: center;
+    font-size: 30px; /* Slightly bigger font size */
+    font-weight: bold;
+    border-bottom: 5px solid #8ab093; /* Keep border thinner */
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-column {
+    width: 45%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    color: #28a745; /* Màu xanh lá cây cho kết quả thành công */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #28a745; /* Viền xanh lá */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Thêm hiệu ứng khi hover vào Prediction */
+#result:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Kết quả lỗi */
+#result.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Kết quả thành công */
+#result.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
